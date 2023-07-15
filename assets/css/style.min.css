@@ -300,7 +300,7 @@ p:last-child {
 }
 
 .default-content-style .content-list-item .list-title {
-    font-family: Poppins, sans-serif;
+    font-family: League Spartan;
     font-size: 24px
 }
 
@@ -382,7 +382,7 @@ p:last-child {
 }
 
 .default-content-style .content-list-with-text li .list-title {
-    font-family: Poppins, sans-serif;
+    font-family: League Spartan;
     font-size: 24px
 }
 
@@ -1953,7 +1953,7 @@ p:last-child {
 
 .service-box-single-item .title {
     font-size: 28px;
-    font-family: Poppins, sans-serif;
+    font-family: League Spartan;
     font-weight: 500;
     margin-bottom: 45px
 }
@@ -1978,7 +1978,7 @@ p:last-child {
     top: 0;
     left: 0;
     content: "";
-    font-family: IcoFont
+    font-family: League Spartan;
 }
 
 .service-box-single-item:hover .inner-shape {
@@ -2156,7 +2156,7 @@ p:last-child {
 }
 
 .counterup-single-item .content .number {
-    font-family: Poppins, sans-serif;
+    font-family: League Spartan;
     font-size: 40px;
     font-weight: 300;
     margin-top: -10px;
@@ -2279,7 +2279,7 @@ p:last-child {
 }
 
 .project-box-single-item .title {
-    font-family: Poppins, sans-serif;
+    font-family: League Spartan;
     font-size: 22px;
     font-weight: 500;
     margin-top: 40px;
@@ -2373,7 +2373,8 @@ p:last-child {
 
 .testimonial-slider-single-item .icon {
     position: absolute;
-    font-family: "Cormorant Garamond", serif;
+    font-family: League Spartan;
+
     font-size: 185px;
     top: 0;
     left: 45px;
@@ -2389,8 +2390,8 @@ p:last-child {
 
 .testimonial-slider-single-item .text {
     font-size: 28px;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
+    font-family: "Poppins";
+    font-weight: 300;
     color: #fff
 }
 
