@@ -2054,7 +2054,7 @@ p:last-child {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--hovercolor);
     -webkit-transition: all 1s linear;
     transition: all 1s linear;
     width: 0
@@ -2161,6 +2161,9 @@ p:last-child {
     margin-bottom: 25px
 }
 
+.number{
+    color :var(--hovercolor) !important;
+}
 @media (min-width:768px) {
     .counterup-single-item .content .number {
         font-size: 52px
