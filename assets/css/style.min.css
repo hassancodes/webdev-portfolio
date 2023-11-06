@@ -18,8 +18,9 @@ body {
 }
 
 :root{
-    --outlinebutton : #ffe600;
-    --hovercolor : #ffe600;
+    --outlinebutton : #F5C10B;
+    /* --hovercolor : #ffe600; */
+    --hovercolor : #F5C10B;
 }
 
 a {
@@ -2390,7 +2391,7 @@ p:last-child {
 
 .testimonial-slider-single-item .text {
     font-size: 28px;
-    font-family: "Poppins";
+    font-family: League Spartan;
     font-weight: 300;
     color: #fff
 }
