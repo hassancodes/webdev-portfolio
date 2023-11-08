@@ -1321,25 +1321,25 @@ p:last-child {
 
 @media (min-width:992px) {
     .hero-content .title-large {
-        font-size: 80px
+        font-size: 65px
     }
 }
 
 @media (min-width:1200px) {
     .hero-content .title-large {
-        font-size: 90px
+        font-size: 60px
     }
 }
 
 @media (min-width:1400px) {
     .hero-content .title-large {
-        font-size: 110px
+        font-size: 75px
     }
 }
 
 @media (min-width:1800px) {
     .hero-content .title-large {
-        font-size: 140px
+        font-size: 90px
     }
 }
 
