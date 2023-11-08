@@ -80,6 +80,15 @@ html {
     color: var(--outlinebutton);
 }
 
+/* .text-color-header{
+    color:var(--outlinebutton) !important;
+    }
+    
+
+.text-color-header:hover{
+color: white !important;
+} */
+
 /* custom border cards*/
 .card-border {
     border-radius: 25px;
@@ -93,6 +102,8 @@ html {
 .inner-shape{
     background-color: var(--outlinebutton);
 }
+
+
 
 /* -------------------------------------------------------------------------------------- */
 
