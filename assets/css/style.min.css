@@ -1315,6 +1315,7 @@ p:last-child {
 
 .hero-content .title-large {
     font-size: 45px;
+    letter-spacing: -2;
     font-weight: 700
 }
 
