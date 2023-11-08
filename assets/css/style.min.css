@@ -5,9 +5,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Custom addition */
+/* All the Custom CSS goes here */
 /* -------------------------------------------------------------------------------------- */
 
+
+/* typewriter effect */
 .typewriter h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
@@ -278,6 +280,12 @@ p:last-child {
         font-size: 66px
     }
 }
+
+
+
+
+
+
 
 .default-content-style .sub-title {
     font-size: 30px;
@@ -1306,7 +1314,7 @@ p:last-child {
 }
 
 .hero-content .title-large {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700
 }
 
