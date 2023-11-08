@@ -64,6 +64,21 @@ html {
 
 
 
+/* custom text Effect */
+.text-color{
+    color:var(--outlinebutton);
+}
+
+.text-color:hover{
+    color:white;
+}
+
+
+/* custom text color for heading */
+
+.text-color-white:hover{
+    color: var(--outlinebutton);
+}
 
 
 
