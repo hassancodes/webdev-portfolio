@@ -1,676 +1,185 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
-
-<!-- Mirrored from htmldemo.net/lendex/lendex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2023 20:19:40 GMT -->
+<html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Thedevhassan | Your Friendly Neighborhood Developer 🕷️</title>
-    <meta name="google-site-verification" content="KrjXRTnb_fc-AzaEZkntLKrMLFn6d7T--Qvz0N9AcGc" />
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="I develop Websites to boost sales and help business grow.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <!-- "assets/images/portrait/portrait-hero.png" -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/laptop.png" />
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/portrait/portrait-hero.png" /> -->
-
-    <!-- CSS
-    ============================================ -->
-
-    <!-- Vendor CSS (Contain Bootstrap, Icon Fonts) -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" /> -->
-
-    <!-- Plugin CSS (Global Plugins Files) -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css" /> -->
-
-    <!-- Style CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-    
-    <!-- Minify Version -->
-    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-    <!-- main css is in this file -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Hassan — Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'JetBrains Mono', monospace;
+      background: #000;
+      color: #fff;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    h1, h2, h3 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .mono-box {
+      border: 1px solid #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .small {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
-
 <body>
+  <nav style="width:100%; border-bottom:1px solid #fff; padding:1rem 1.5rem; display:flex; justify-content:space-between; align-items:center; font-family:'JetBrains Mono', monospace;">
+    <div style="font-weight:700; letter-spacing:1px;">HASSAN.dev</div>
+    <button id="navToggle" style="background:none; border:1px solid #fff; color:#fff; padding:0.3rem 0.6rem; font-size:0.9rem; cursor:pointer; display:none;">MENU</button>
+    <div id="navLinks" style="display:flex; gap:2rem; font-size:0.9rem;">
+      <a href="#experience" style="color:#fff; text-decoration:none;">Experience</a>
+      <a href="#skills" style="color:#fff; text-decoration:none;">Skills</a>
+      <a href="#projects" style="color:#fff; text-decoration:none;">Projects</a>
+      <a href="#contact" style="color:#fff; text-decoration:none;">Contact</a>
+    </div>
+  </nav>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    function updateNav(){
+      if(window.innerWidth < 700){
+        toggle.style.display = 'block';
+        links.style.display = 'none';
+      } else {
+        toggle.style.display = 'none';
+        links.style.display = 'flex';
+      }
+    }
+    toggle.addEventListener('click', ()=>{
+      links.style.display = links.style.display === 'none' ? 'flex' : 'none';
+    });
+    window.addEventListener('resize', updateNav);
+    updateNav();
+  </script>
+  <div class="container">
 
+    <h1>Muhammad Hassan</h1>
 
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="mono-box small">
+        GitHub: <a href="https://github.com/hassancodes">github.com/hassancodes</a><br>
+        Portfolio: <a href="https://thedevhassan.com">thedevhassan.com</a><br>
+        Email: thatdevhassan@gmail.com<br>
+        Phone: 571-283-5299<br>
+        Alexandria, VA
+      </div>
+    </div>
 
-    <main class="main-wrapper">
-        <!-- adding custom cursor -->
-        <div class="cursor-dot"></div>
-        <div class="cursor-outline"></div>
-    
+    <div class="section">
+      <h2>Experience</h2>
 
+      <div class="mono-box">
+        <h3>Software Developer Intern — Power Media Group</h3>
+        <p class="small">Jan 2021 – July 2021</p>
+        <p>Developed workflow automation, Selenium bots, and analytical tools to help artists grow 2x through data-based decisions.</p>
+      </div>
 
-        <!-- .....:::::: Start Header Section :::::.... -->
-        <header class="header-section sticky-header d-none d-lg-block">
-            <div class="header-wrapper">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col">
-                            <!-- Start Header Logo -->
-                            <a href="index.html" class="header-logo">
-                                <!-- <img src="assets/images/logo/logo.png" alt=""> -->
-                                <h1>thedevhassan</h1>
-                            </a>
-                            <!-- End Header Logo -->
-                        </div>
-                        <div class="col-auto">
-                            <!-- Start Header Menu -->
-                            <ul class="header-nav">
-                                <li><a href="index.html"><strong class="text-color-header">Home</strong></a></li>
-                                <li class="has-dropdown">
-                                    <a href="service-list.html">Service</a>
-                                    <ul class="submenu">
-                                        <li><a href="service-list.html">Web Development</a></li>
-                                        <li><a href="service-list.html">UI / UX Development</a></li>
-                                        <li><a href="service-list.html">Automation</a></li>
-                                        <!-- <li><a href="service-details.html">Service Details</a></li> -->
-                                    </ul>
-                                </li>
-                                <!-- <li class="has-dropdown">
-                                    <a href="blog-list.html">Blog</a>
-                                    <ul class="submenu">
-                                        <li><a href="blog-list.html">Blog List Full Width</a></li>
-                                        <li><a href="blog-list-sidebar-left.html">Blog List Left Sidebar</a></li>
-                                        <li><a href="blog-list-sidebar-right.html">Blog List Right Sidebar</a></li>
-                                        <li><a href="blog-details.html">Blog Details Full Width</a></li>
-                                        <li><a href="blog-details-sidebar-left.html">Blog Details Left Sidebar</a></li>
-                                        <li><a href="blog-details-sidebar-right.html">Blog Details Right Sidebar</a></li>
-                                    </ul>
-                                </li> -->
-                                <!-- <li class="has-dropdown">
-                                    <a href="#"><span class="text-color-header">Pages</span></a>
-                                    <ul class="submenu">
-                                        <li><a href="about.html">About Us</a></li>
-                                    <li><a href="project-list.html">Project</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404-page.html">404 Page</a></li>
-                                    </ul>
-                                </li> -->
-                                <li><a href="https://formsubmit.co/el/fibohi"><span class="text-color-header">Contact</span></a></li>
-                            </ul>
-                            <!-- End Header Menu -->
-                        </div>
-                        <div class="col">
-                            <div class="header-btn-link text-end">
-                               <a href="https://formsubmit.co/el/fibohi" class="btn btn-sm btn-outline-one icon-space-left">Hire Me <i class="icofont-double-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- .....:::::: End Header Section :::::.... -->
+      <div class="mono-box">
+        <h3>Nova Corp Intern — NOVA</h3>
+        <p class="small">Jan 2023 – Jan 2024</p>
+        <p>Provided technical/student support and streamlined communication for 100+ students.</p>
+      </div>
 
-        <!-- .....:::::: Start Mobile Header Section :::::.... -->
-        <div class="mobile-header d-block d-lg-none">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col">
-                        <div class="mobile-logo">
-                            <!-- <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a> -->
-                            <h1>Thedevhassan</h1>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="mobile-action-link text-end">
-                            <a href="#mobile-menu-offcanvas" class="offcanvas-toggle offside-menu"><i class="icofont-navigation-menu"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- .....:::::: Start MobileHeader Section :::::.... -->
+      <div class="mono-box">
+        <h3>Specimen Technician I — Quest Diagnostics</h3>
+        <p>Responsible for processing, preparing, and troubleshooting specimen data and workflow.</p>
+      </div>
+    </div>
 
-        <!--  Start Offcanvas Mobile Menu Section -->
-        <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-rightside offcanvas-mobile-menu-section">
-            <!-- Start Offcanvas Header -->
-            <div class="offcanvas-header text-end">
-                <button class="offcanvas-close"><i class="icofont-close-line"></i></button>
-            </div> <!-- End Offcanvas Header -->
-            <!-- Start Offcanvas Mobile Menu Wrapper -->
-            <div class="offcanvas-mobile-menu-wrapper">
-                <!-- Start Mobile Menu  -->
-                <div class="mobile-menu-bottom">
-                    <!-- Start Mobile Menu Nav -->
-                    <div class="offcanvas-menu">
-                        <ul>
-                            <li>
-                                <a href="index.html"><span>Home</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span>Services</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="service-list.html">UI / UX Development</a></li>
-                                    <li><a href="service-details.html">Web Development</a></li>
-                                    <li><a href="service-details.html">Selenium Automation</a></li>
-                                    <li><a href="service-details.html">Data Ananlysis</a></li>
-                                    <li><a href="service-details.html">Seo Marketing</a></li>
-                                    <li><a href="service-details.html">Facebook Ads</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li>
-                                <a href="#"><span>Blog</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="blog-list.html">Blog List Full Width</a></li>
-                                    <li><a href="blog-list-sidebar-left.html">Blog List Left Sidebar</a></li>
-                                    <li><a href="blog-list-sidebar-right.html">Blog List Right Sidebar</a></li>
-                                    <li><a href="blog-details.html">Blog Details Full Width</a></li>
-                                    <li><a href="blog-details-sidebar-left.html">Blog Details Left Sidebar</a></li>
-                                    <li><a href="blog-details-sidebar-right.html">Blog Details Right Sidebar</a></li>
-                                </ul>
-                            </li> -->
-                            <li>
-                                <a href="#"><span>Pages</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="project-list.html">Project</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404-page.html">404 Page</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="https://formsubmit.co/el/fibohi"><span>Contact</span></a>
-                            </li>
-                        </ul>
-                    </div> <!-- End Mobile Menu Nav -->
-                </div> <!-- End Mobile Menu -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="mono-box small">
+        <strong>Languages:</strong> Python, JavaScript, Java<br>
+        <strong>Libraries:</strong> React.js, Pandas, NumPy, Matplotlib<br>
+        <strong>Frameworks:</strong> Flask, Node.js<br>
+        <strong>Databases:</strong> MongoDB, Firestore, MySQL<br>
+        <strong>Other:</strong> Heroku, Apache, Figma, Bootstrap, Tailwind
+      </div>
+    </div>
 
-                <!-- Start Mobile contact Info -->
-                <div class="mobile-contact-info text-center">
-                    <ul class="social-link">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/muhammadhassan-0/"><i class="icofont-linkedin"></i></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com/Hassantweets4"><i class="icofont-twitter"></i></a>
-                        </li>
-                        <li><a target="_blank" href="https://www.instagram.com/thedevhassan/"><i class="icofont-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <!-- End Mobile contact Info -->
+    <div class="section">
+      <h2>Certifications</h2>
+      <div class="mono-box small">
+        AWS Cloud Practitioner — July 2023<br>
+        HackerRank Python — Sept 2023<br>
+        OpenCV for Python Developers — Sept 2023<br>
+        Responsive Web Design — March 2023
+      </div>
+    </div>
 
-            </div> <!-- End Offcanvas Mobile Menu Wrapper -->
-        </div>
-        <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
+    <div class="section">
+      <h2>Projects</h2>
 
-        <!-- Offcanvas Overlay -->
-        <div class="offcanvas-overlay"></div>
+      <div class="mono-box">
+        <h3>PHD Research Work — GDC Data Generator</h3>
+        <p>Built Selenium-based data engine collecting 8.4M+ crime records; optimized from 49 days → 8 days using multiprocessing.</p>
+      </div>
 
-        <!-- ...::: Start Hero Section :::... -->
-        <div class="hero-section section-dark-blue-bg">
-            <div class="hero-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xxl-7">
-                            <div class="hero-content">
-                                <h3 class="title-big">Hey I'm a</h3>
-                                <div class="typewriter">
-                                <h2 class="title-large">Software <span class="text-color shape-mark">Engineer</span></h2>
-                                </div>
-                                <p>Optimizing <span class="text-color">Design</span> and <span class="text-color">Development</spans></p>
+      <div class="mono-box">
+        <h3>StockX Bot</h3>
+        <p>Developed multi-threaded rotating proxy bot bypassing StockX detection, scraped 40k sneakers.</p>
+      </div>
 
-                                <a href="https://formsubmit.co/el/fibohi" class="btn btn-sm btn-outline-one icon-space-left">Get a Free <span class="text-color">Quote</span> <i class="icofont-ui-note"></i></a>
+      <div class="mono-box">
+        <h3>OpenCV Boxing Game — VT Hacks</h3>
+        <p>Real-time action tracking using Mediapipe and Python; implemented movement, hit detection & health bar systems.</p>
+      </div>
 
+      <div class="mono-box">
+        <h3>8-Bit Image Converter — Patriot Hacks</h3>
+        <p>Real-time CV filter app using Flask with streaming + upload/download functions.</p>
+      </div>
 
+      <div class="mono-box">
+        <h3>Snap Score Bot</h3>
+        <p>Python ADB automation bot increasing score from 1400 → 1M using pixel-coordinate routines.</p>
+      </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="mono-box">
+        <h3>Idiya App</h3>
+        <p>Full-stack React app using Firebase authentication with likes/comments & user activity tracking.</p>
+      </div>
 
-                <div class="hero-shape hero-top-shape">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="hero-shape hero-bottom-shape">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    </div>
 
-                <div class="hero-portrait">
-                    <div class="image">
-                        <img class="img-fluid" style="border-radius: 15px;" src="assets/images/portrait/portrait-hero.png" alt="">
-
-                        <div class="image-half-round-shape"></div>
-                        <div class="social-link">
-                            <!-- <a href="https://www.example.com/" target="_blank"><i class="icofont-facebook"></i></a> -->
-                            <a href="https://dribbble.com/thedevhassan" target="_blank"><i class="icofont-dribbble"></i></a>
-                            <a href="https://www.instagram.com/thedevhassan/" target="_blank"><i class="icofont-instagram"></i></a>
-                            <a href="https://www.behance.net/muhammadhassan45" target="_blank"><i class="icofont-behance"></i></a>
-                            <a href="https://www.linkedin.com/in/muhammadhassan-0/" target="_blank"><i class="icofont-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ...::: End Hero Section :::... -->
-
-        <!-- ...::: Start Service Display Section :::... -->
-        <div class="service-display-section section-gap-tb-165 pos-relative">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Start Section Content -->
-                        <div class="section-content">
-                            <span class="section-tag">My Services</span>
-                            <h2 class="section-title"><span class="text-color-white">Services I Offer.</span></h2>
-                        </div>
-                        <!-- End Section Content -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start Service Section Wrapper -->
-            <div class="service-display-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="service-display-slider">
-                                <!-- Slider main container -->
-                                <div class="swiper-container">
-                                    <!-- Additional required wrapper -->
-                                    <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <!-- Start Service Box Single Item -->
-                                        <div class=" card-border service-box-single-item swiper-slide">
-                                            <div class="inner-shape inner-shape-top-right"></div>
-                                            <div class="icon"><img src="assets/images/icon/service-icon-1.png" alt=""></div>
-                                            <h4 class="title"><a href="service-details.html">UI/UX Design</a></h4>
-                                            <ul class="list-item">
-                                                <li>Landing Pages</li>
-                                                <li>Prototyping</li>
-                                                <li>Wireframing</li>
-                                                <!-- <li>Mobile App Design</li> -->
-                                            </ul>
-                                            <div class="inner-shape inner-shape-bottom-right"></div>
-                                        </div>
-                                        <!-- End Service Box Single Item -->
-                                        <!-- Start Service Box Single Item -->
-                                        <div class="card-border service-box-single-item swiper-slide">
-                                            <div class="inner-shape inner-shape-top-right"></div>
-                                            <div class="icon"><img src="assets/images/icon/service-icon-2.png" alt=""></div>
-                                            <h4 class="title"><a href="service-details.html">Development</a></h4>
-                                            <ul class="list-item">
-                                                <li>Website Development</li>
-                                                <li>Desktop Apps</li>
-                                                <li>Custom Software</li>
-                                                <!-- <li>WordPress</li> -->
-                                                <!-- <li>React</li> -->
-                                            </ul>
-                                            <div class="inner-shape inner-shape-bottom-right"></div>
-                                        </div>
-                                        <!-- End Service Box Single Item -->
-                                        <!-- Start Service Box Single Item -->
-                                        <div class="card-border service-box-single-item swiper-slide">
-                                            <div class="inner-shape inner-shape-top-right"></div>
-                                            <div class="icon"><img src="assets/images/icon/service-icon-3.png" alt=""></div>
-                                            <h4 class="title"><a href="service-details.html">Automation</a></h4>
-                                            <ul class="list-item">
-                                                <li>Bot Development</li>
-                                                <li>Custom Scraping</li>
-                                                <li>Testing</li>
-                                                <!-- <li>Motion Graphic</li> -->
-                                            </ul>
-                                            <div class="inner-shape inner-shape-bottom-right"></div>
-                                        </div>
-                                        <!-- End Service Box Single Item -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="service-display-dots">
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <!-- End Service Section Wrapper -->
-        </div>
-        <!-- ...::: End Service Display Section :::... -->
-
-        <!-- ...::: Start Skill Display Section :::... -->
-        
-        <!-- ...::: End Skill Display Section :::... -->
-
-        <!-- ...::: Start Counter Display Section :::... -->
-        <div class="counter-display-section section-gap-tb-165 section-bg-2">
-            <div class="counter-display-wrapper">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-sm-start">
-                        <div class="d-block d-md-flex justify-content-md-start col-12 col-sm-4 col-md-4">
-                            <!-- Start Counterup Single Item -->
-                            <div class="counterup-single-item">
-                                <div class="icon">
-                                    <img src="assets/images/icon/counterup-icon-1.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h2 class="number"><span class="counter">100</span>+</h2>
-                                    <span class="text"><span class="text-color">Happy</span> Clients</span>
-                                </div>
-                            </div>
-                            <!-- End Counterup Single Item -->
-                        </div>
-                        <div class="d-block d-md-flex justify-content-md-center col-12 col-sm-4 col-md-4">
-                            <!-- Start Counterup Single Item -->
-                            <div class="counterup-single-item">
-                                <div class="icon">
-                                    <img src="assets/images/icon/counterup-icon-2.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h2 class="number"><span class="counter">100</span>+</h2>
-                                    <span class="text"><span class="text-color">Successfully</span> completed Projects</span>
-                                </div>
-                            </div>
-                            <!-- End Counterup Single Item -->
-                        </div>
-                        <div class="d-block d-md-flex justify-content-md-end col-12 col-sm-4 col-md-4">
-                            <!-- Start Counterup Single Item -->
-                            <div class="counterup-single-item">
-                                <div class="icon">
-                                    <img src="assets/images/icon/counterup-icon-3.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h2 class="number"><span class="counter">2</span>+</h2>
-                                    <span class="text"><span class="text-color">Years</span> of Experience</span>
-                                </div>
-                            </div>
-                            <!-- End Counterup Single Item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ...::: End Counter Display Section :::... -->
-
-        <!-- ...::: Start Project Display Section :::... -->
-        
-        <!-- ...::: End Project Display Section :::... -->
-
-        <!-- ...::: Start Testimonial Display Section :::... -->
-        <div class="testimonial-display-section section-gap-tb-165 section-bg">
-            <div class="testimonial-display-box d-flex flex-column align-items-center d-xl-block pos-relative">
-                <div class="container overflow-hidden">
-                    <div class="row">
-                        <div class="col d-xl-flex justify-content-xl-end">
-                            <!-- Start Section Content -->
-                            <div class="section-content pos-relative">
-                                <span class="section-tag">Testimonial</span>
-                                <h2 class="section-title"><span class="text-color-white">Satisfied Clients Say</span></h2>
-                            </div>
-                            <!-- End Section Content -->
-                        </div>
-                    </div>
-
-                    <div class="testimonial-display-wrapper">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="testimonial-display-slider">
-                                    <!-- Swiper -->
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <!-- Start testimonial Slider Single Item -->
-                                            <div class="card-border testimonial-slider-single-item swiper-slide">
-                                                <div class="inner-shape inner-shape-top-right"></div>
-                                                <div class="content">
-                                                    <span class="icon">“</span>
-                                                    <p class="text">I had an excellent experience working with hassan(webninjastudios) who developed a website and marketing strategy that boosted my sales by 10x.</p>
-                                                    <div class="info">
-                                                        <div class="author">
-                                                            <h4 class="name">Raleigh Friend</h4>
-                                                            <span class="designation">-Jhon Sowl</span>
-                                                        </div>
-                                                        <ul class="review">
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End testimonial Slider Single Item -->
-                                            <!-- Start testimonial Slider Single Item -->
-                                            <div class=" card-border testimonial-slider-single-item swiper-slide">
-                                                <div class="inner-shape inner-shape-top-right"></div>
-                                                <div class="content">
-                                                    <span class="icon">“</span>
-                                                    <p class="text">Hassan helped me increase sales for my barber shop by optimizing my website for search engines. They were professional, easy to work with</p>
-                                                    <div class="info">
-                                                        <div class="author">
-                                                            <h4 class="name">Raleigh Friend</h4>
-                                                            <span class="designation">Jay</span>
-                                                        </div>
-                                                        <ul class="review">
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End testimonial Slider Single Item -->
-                                            <!-- Start testimonial Slider Single Item -->
-                                            <div class=" card-border testimonial-slider-single-item swiper-slide">
-                                                <div class="inner-shape inner-shape-top-right"></div>
-                                                <div class="content">
-                                                    <span class="icon">“</span>
-                                                    <p class="text">Hassan redesigned my restaurant's website, making it more visually appealing, user-friendly and optimized for search engines. Traffic and sales have increased</p>
-                                                    <div class="info">
-                                                        <div class="author">
-                                                            <h4 class="name">Raleigh Friend</h4>
-                                                            <span class="designation">Owner,Seoly</span>
-                                                        </div>
-                                                        <ul class="review">
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                            <li class="fill"><i class="icofont-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End testimonial Slider Single Item -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="default-nav-style mt-5 mt-xl-0">
-                    <!-- If we need navigation buttons -->
-                    <div class="slider-button button-prev"><i class="icofont-double-left"></i></div>
-                    <div class="slider-button button-next"><i class="icofont-double-right"></i></div>
-                </div>
-            </div>
-        </div>
-        <!-- ...::: End Testimonial Display Section :::... -->
-
-
-
-
-
-
-
-
-
-        <!-- ...::: Start Company Logo Display Section :::... -->
-        <!-- ...::: End Company Logo Display Section :::... -->
-
-
-
-
-
-
-
-
-
-
-     
-        <!-- ...::: Start Footer Section :::... -->
-        <footer class="footer-section section-bg overflow-hidden pos-relative">
-            <div class="footer-inner-shape-top-left"></div>
-            <div class="footer-inner-shape-top-right"></div>
-            <div class="footer-section-top section-gap-t-165">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- Start Section Content -->
-                            <div class="section-content pos-relative text-center">
-                                <span class="section-tag">Get Latest Updates</span>
-                                <h2 class="section-title"><span class="text-color-white">Get a Free Quote</span></h2>
-                                <a href="https://formsubmit.co/el/fibohi" class="btn btn-sm btn-outline-one icon-space-left">Click <span class="text-color">Here</span> <i class="icofont-ui-note"></i></a>
-                            </div>
-                            <!-- End Section Content -->
-                        </div>
-                    </div>
-                    <div class="footer-top-wrapper text-center">
-                        <div class="row">
-                            <div class="col-12">
-
-
-                                <!-- subscription form starts from -->
-                                <!-- <form action="https://gmail.us21.list-manage.com/subscribe/post?u=bd9f381873f0b14c9d26337c4&amp;id=abd574c64e&amp;f_id=00c9ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" class="footer-newsletter">
-                                    <input type="email" placeholder="enter your email">
-                                    <button class="submit-btn" type="submit">Subscribe Now</button>
-                                </form> -->
-
-
-
-                                <!-- <form action="https://gmail.us21.list-manage.com/subscribe/post?u=bd9f381873f0b14c9d26337c4&amp;id=abd574c64e&amp;f_id=00c9ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate footer-newsletter" target="_blank">
-                                          <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required="" value="">
-                                          <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                                          <button onclick="document.getElementById('mce-EMAIL').innerText ==='' ? alert('Dont try to be over smart') : alert('form submitted')" type="submit" name="subscribe submit-btn" id="mc-embedded-subscribe" class="button submit-btn" value="Subscribe">Subscribe</button>
-                                   </form> -->
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-center section-gap-tb-165">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center mb-n5">
-                        <div class="col-auto mb-5">
-                            <!-- Start Single Footer Info -->
-                            <div class="footer-single-info">
-                                <a href="tel:+0123456789" class="info-box">
-                                    <span class="icon"><i class="icofont-phone"></i></span>
-                                    <span class="text">+15712830000</span>
-                                </a>
-                            </div>
-                            <!-- Start Single Footer Info -->
-                        </div>
-                        <div class="col-auto mb-5">
-                            <!-- Start Single Footer Info -->
-                            <div class="footer-single-info">
-                                <a href="mailto:thatdevhassan@gmail.com" class="info-box">
-                                    <span class="icon"><i class="icofont-envelope-open"></i></span>
-                                    <span class="text">thatdevhassan@gmail.com</span>
-                                </a>
-                            </div>
-                            <!-- Start Single Footer Info -->
-                        </div>
-                        <div class="col-auto mb-5">
-                            <!-- Start Single Footer Info -->
-                            <div class="footer-single-info">
-                                <ul class="social-link">
-                                    <li><a href="https://www.instagram.com/thedevhassan/" target="_blank"><i class="icofont-instagram"></i></a></li>
-                                    <li><a href="https://dribbble.com/thedevhassan" target="_blank"><i class="icofont-dribbble"></i></a></li>
-                                    <li><a href="https://github.com/hassancodes/" target="_blank"><i class="icofont-github"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Start Single Footer Info -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-md-between align-items-center flex-column-reverse flex-md-row">
-                        <div class="col-auto">
-                            <div class="footer-copyright">
-                                <p class="copyright-text">&copy; 2023 <a href="index.html"></a> Made with <i class="icofont-heart"></i> by TheDevHassan</p>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <a href="index.html" class="footer-logo">
-                                <div class="logo">
-                                    <h1>thedevhassan</h1>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- ...::: End Footer Section :::... -->
-
-        <!-- material-scrolltop button -->
-    <button class="material-scrolltop" type="button"></button>
-    </main>
-
-    <!-- Global Vendor, plugins JS -->
-
-    <!-- JS Files
-    ============================================ -->
-    <!-- Global Vendor, plugins JS -->
-
-    <!-- Vendor JS -->
-    <!-- <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
-    
-    <!--Plugins JS-->
-    <!-- <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assets/js/plugins/jquery.appear.min.js"></script>
-    <script src="assets/js/plugins/venobox.min.js"></script>
-    <script src="assets/js/plugins/jquery.waypoints.js"></script>
-    <script src="assets/js/plugins/images-loaded.min.js"></script>
-    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-    <script src="assets/js/plugins/counter.js"></script>
-    <script src="assets/js/plugins/ajax-mail.js"></script>
-    <script src="assets/js/plugins/material-scrolltop.js"></script> -->
-
-    <!-- Minify Version -->
-    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-    <script src="assets/js/vendor.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
-
-    <!--Main JS (Common Activation Codes)-->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/cursor.js"></script>
-<!-- chatwidget from highlevel -->
-    <chat-widget
-  location-id="O9CK8gGeGhcSIe0BQkWc">
-    </chat-widget>
-    <script
-        src="https://widgets.leadconnectorhq.com/loader.js" 
-        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" >
-    </script>
-
-
+  </div>
+  <footer style="text-align:center; padding:2rem 0; font-size:0.9rem; opacity:0.6; border-top:1px solid #fff; margin-top:3rem;">
+    © 2025 Muhammad Hassan — Software Developer. Built with JetBrains Mono.
+  </footer>
 </body>
-
-
-<!-- Mirrored from htmldemo.net/lendex/lendex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2023 20:20:23 GMT -->
 </html>
