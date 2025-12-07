@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammad Hassan — Software Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
- 
+  <!-- adding font awesome -->
+  <script src="https://kit.fontawesome.com/3c897625f8.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
-  <nav style="width:90%; border-bottom:1px solid #fff;  display:flex; justify-content:space-between; align-items:center; font-family:'JetBrains Mono', monospace;">
-    <div style="font-weight:700; letter-spacing:1px;">HASSAN.dev</div>
-    <button id="navToggle" style="background:none; border:1px solid #fff; color:#fff; padding:0.3rem 0.6rem; font-size:0.9rem; cursor:pointer; display:none;">MENU</button>
+  <nav
+    style="width:90%; border-bottom:1px solid #fff;  display:flex; justify-content:space-between; align-items:center; font-family:'JetBrains Mono', monospace;">
+    <div style="font-weight:700; letter-spacing:1px;">HASSAN.dev <i class="fa-solid fa-code"></i></div>
+    <button id="navToggle"
+      style="background:none; border:1px solid #fff; color:#fff; padding:0.3rem 0.6rem; font-size:0.9rem; cursor:pointer; display:none;">MENU</button>
     <div id="navLinks" style="display:flex; gap:2rem; font-size:0.9rem;">
       <a href="#experience" style="color:#fff; text-decoration:none;">Experience</a>
       <a href="#skills" style="color:#fff; text-decoration:none;">Skills</a>
@@ -24,8 +30,9 @@
   <script>
     const toggle = document.getElementById('navToggle');
     const links = document.getElementById('navLinks');
-    function updateNav(){
-      if(window.innerWidth < 700){
+
+    function updateNav() {
+      if (window.innerWidth < 700) {
         toggle.style.display = 'block';
         links.style.display = 'none';
       } else {
@@ -33,7 +40,7 @@
         links.style.display = 'flex';
       }
     }
-    toggle.addEventListener('click', ()=>{
+    toggle.addEventListener('click', () => {
       links.style.display = links.style.display === 'none' ? 'flex' : 'none';
     });
     window.addEventListener('resize', updateNav);
@@ -41,7 +48,7 @@
   </script>
   <div class="container">
 
-    <h1>Muhammad Hassan</h1>
+    <h1>Muhammad Hassan </h1>
 
     <div class="section">
       <h2 id="contact">Contact</h2>
@@ -49,7 +56,7 @@
         GitHub: <a href="https://github.com/hassancodes">github.com/hassancodes</a><br>
         Portfolio: <a href="https://thedevhassan.com">thedevhassan.com</a><br>
         Email: thatdevhassan@gmail.com<br>
-        Alexandria, VA
+        Virginia, USA
       </div>
     </div>
 
@@ -59,7 +66,10 @@
       <div class="mono-box">
         <h3>Software Developer Intern — Power Media Group</h3>
         <p class="small">Jan 2021 – July 2021</p>
-        <p>Developed workflow automation, Selenium bots, and analytical tools to help artists grow 2x through data-based decisions.</p>
+        <p>Developed workflow automation, Selenium bots, and analytical tools to help artists grow 2x through data-based
+          decisions.</p>
+        <br>
+
       </div>
 
       <div class="mono-box">
@@ -95,46 +105,102 @@
       </div>
     </div>
 
+
+
+
+    <!-- project section starts here -->
     <div class="section">
       <h2 id="projects">Projects</h2>
 
       <div class="mono-box">
-        <h3>PHD Research Work — GDC Data Generator</h3>
-        <p>Built Selenium-based data engine collecting 8.4M+ crime records; optimized from 49 days → 8 days using multiprocessing.</p>
-        <!-- <button id="viewsource"><a href="https://github.com/hassancodes"></a>View Source</button> -->
-        <!-- <button id="viewsource"><a href="https://github.com/hassancodes"></a>View Source</button> -->
-      </div>
-
-      <div class="mono-box">
-        <h3>StockX Bot</h3>
-        <p>Developed multi-threaded rotating proxy bot bypassing StockX detection, scraped 40k sneakers.</p>
-      </div>
-
-      <div class="mono-box">
-        <h3>OpenCV Boxing Game — VT Hacks</h3>
-        <p>Real-time action tracking using Mediapipe and Python; implemented movement, hit detection & health bar systems.</p>
-      </div>
-
-      <div class="mono-box">
-        <h3>8-Bit Image Converter — Patriot Hacks</h3>
-        <p>Real-time CV filter app using Flask with streaming + upload/download functions.</p>
-      </div>
-
-      <div class="mono-box">
         <h3>Snap Score Bot</h3>
         <p>Python ADB automation bot increasing score from 1400 → 1M using pixel-coordinate routines.</p>
+        <br>
+        <div>
+          <button id="projectbutton"><a style ="border-bottom:none"  href="https://github.com/hassancodes/snapscore">View Source</a> <i class="fa-brands fa-github-alt"></i></button>
+          <button id="projectbutton"><a style ="border-bottom:none" href="https://snapscoreguide.netlify.app/">Live Link</a><i class="fa-solid fa-link"></i></button>
+        </div>
       </div>
+
+
 
       <div class="mono-box">
         <h3>Idiya App</h3>
         <p>Full-stack React app using Firebase authentication with likes/comments & user activity tracking.</p>
+        <br>
+        <div>
+            <button id="projectbutton"><a style ="border-bottom:none"  href="https://github.com/hassancodes/react-firebase-app">View Source</a> <i class="fa-brands fa-github-alt"></i></button>
+          <button id="projectbutton"><a style ="border-bottom:none" href="https://wink-b51e9.firebaseapp.com/">Live Link</a><i class="fa-solid fa-link"></i></button>
+
+        </div>
       </div>
 
-    </div>
 
+
+      <div class="mono-box">
+        <h3>8-Bit Image Converter — Patriot Hacks</h3>
+        <p>Real-time CV filter app using Flask with streaming + upload/download functions.</p>
+        <br>
+        <div>
+            <button id="projectbutton"><a style ="border-bottom:none"  href="https://github.com/hassancodes/Pix8">View Source</a> <i class="fa-brands fa-github-alt"></i></button>
+          <!-- <button id="projectbutton"><a style ="border-bottom:none" href="https://wink-b51e9.firebaseapp.com/">Live Link</a><i class="fa-solid fa-link"></i></button> -->
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="mono-box">
+        <h3>OpenCV Boxing Game — VT Hacks</h3>
+        <p>Real-time action tracking using Mediapipe and Python; implemented movement, hit detection & health bar
+          systems.</p>
+
+        <br>
+        <div>
+            <button id="projectbutton"><a style ="border-bottom:none"  href="https://github.com/hassancodes/streetboxer">View Source</a> <i class="fa-brands fa-github-alt"></i></button>
+          <!-- <button id="projectbutton"><a style ="border-bottom:none" href="https://wink-b51e9.firebaseapp.com/">Live Link</a><i class="fa-solid fa-link"></i></button> -->
+
+        </div>
+      </div>
+
+    <!-- start working from here next time -->
+
+      <!-- <div class="mono-box">
+        <h3>PHD Research Work — GDC Data Generator</h3>
+        <p>Built Selenium-based data engine collecting 8.4M+ crime records; optimized from 49 days → 8 days using
+          multiprocessing.</p>
+        <br>
+        <div>
+          <button id="projectbutton">View Source <i class="fa-brands fa-github-alt"></i></button>
+          <button id="projectbutton">Live Link <i class="fa-solid fa-link"></i></button>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="mono-box">
+        <h3>StockX Bot</h3>
+        <p>Developed multi-threaded rotating proxy bot bypassing StockX detection, scraped 40k sneakers.</p>
+         <button id="projectbutton">View Source <i class="fa-brands fa-github-alt"></i></button>
+          <button id="projectbutton">Live Link <i class="fa-solid fa-link"></i></button>
+       
+      
+      </div> -->
+
+    </div>
+    <p align="center"><a href="https://github.com/hassancodes">View More Projects <i class="fa-solid fa-code"></i></a>
+    </p>
   </div>
-  <footer style="text-align:center; padding:2rem 0; font-size:0.9rem; opacity:0.6; border-top:1px solid #fff; margin-top:3rem;">
+
+
+  <footer
+    style="text-align:center; padding:2rem 0; font-size:0.9rem; opacity:0.6; border-top:1px solid #fff; margin-top:3rem;">
     © 2025 Muhammad Hassan — Software Developer. Built with JetBrains Mono.
   </footer>
 </body>
+
 </html>

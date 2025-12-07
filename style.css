@@ -51,3 +51,21 @@ nav{
       font-size: 0.9rem;
       opacity: 0.8;
     }
+
+    /* buttons */
+
+    #projectbutton{
+
+      padding: 12px 12px 12px 12px;
+      border: 1px solid #20C20E;
+      background-color: black;
+      color:white;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    
+
+
+    #projectbutton:hover{
+      box-shadow: 3px 3px #20C20E;
+      
+    }
